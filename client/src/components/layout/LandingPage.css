@@ -1,0 +1,117 @@
+.landing-page {
+  height: 100vh; /* Full viewport height */
+  width: 100%; /* Full viewport width */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+  padding: 0; /* Remove padding */
+  box-sizing: border-box;
+  position: relative; /* For positioning the background layers */
+  overflow: hidden;
+}
+
+.background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  animation: fade 10s infinite; /* Animation for fading effect */
+  z-index: -1; /* Place behind the content */
+}
+
+.background-1 {
+  background-image: url('../../assets/circuit-board.jpg'); /* First background image */
+}
+
+.background-2 {
+  background-image: url('../../assets/circuit-board2.jpg'); /* Second background image */
+  animation-delay: 5s; /* Delay to alternate with the first image */
+}
+
+.overlay {
+  text-align: center;
+  padding: 2rem;
+  background: rgba(0, 0, 0, 0.6); /* Semi-transparent overlay */
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
+}
+
+.content {
+  max-width: 600px;
+  margin: 0 auto;
+  z-index: 1; /* Ensure content is above the background */
+}
+
+.title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: #ff7f50; /* Highlighted title color */
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  line-height: 1.6;
+  color: #f0f0f0; /* Softer subtitle color */
+}
+
+.button-group {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.btn {
+  padding: 0.8rem 2rem;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.primary-btn {
+  background: #ff7f50;
+  color: #fff;
+}
+
+.primary-btn:hover {
+  background: #ff5722;
+  transform: scale(1.05); /* Subtle hover effect */
+}
+
+.secondary-btn {
+  background: transparent;
+  color: #fff;
+  border: 2px solid #fff;
+}
+
+.secondary-btn:hover {
+  background: #fff;
+  color: #1e3c72;
+  transform: scale(1.05); /* Subtle hover effect */
+}
+
+/* Animation for fading effect */
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}

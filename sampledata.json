@@ -1,0 +1,76 @@
+{
+  "components": [
+    {
+      "id": "IC1",
+      "name": "MY_IC",
+      "type": "IC",
+      "pins": [
+        { "id": "1", "name": "VCC", "type": "power" },
+        { "id": "2", "name": "GND", "type": "ground" },
+        { "id": "3", "name": "OUT1", "type": "output" },
+        { "id": "4", "name": "IN1", "type": "input" }
+      ]
+    },
+    {
+      "id": "CONN1",
+      "name": "MY_CONNECTOR",
+      "type": "CONNECTOR",
+      "pins": [
+        { "id": "1", "name": "PIN1", "type": "bidirectional" },
+        { "id": "2", "name": "PIN2", "type": "bidirectional" }
+      ]
+    },
+    {
+      "id": "COMP1",
+      "name": "MY_COMP_01",
+      "type": "COMPONENT",
+      "pins": [
+        { "id": "1", "name": "P1", "type": "bidirectional" },
+        { "id": "2", "name": "P2", "type": "bidirectional" }
+      ]
+    },
+    {
+      "id": "COMP2",
+      "name": "MY_COMP_02",
+      "type": "COMPONENT",
+      "pins": [
+        { "id": "1", "name": "P1", "type": "bidirectional" },
+        { "id": "2", "name": "P2", "type": "bidirectional" }
+      ]
+    }
+  ],
+  "nets": [
+    {
+      "id": "NET1",
+      "name": "VCC",
+      "connections": [
+        { "componentId": "IC1", "pinId": "1" },
+        { "componentId": "CONN1", "pinId": "1" }
+      ]
+    },
+    {
+      "id": "NET2",
+      "name": "GND",
+      "connections": [
+        { "componentId": "IC1", "pinId": "2" },
+        { "componentId": "COMP1", "pinId": "2" },
+        { "componentId": "COMP2", "pinId": "2" }
+      ]
+    },
+    {
+      "id": "NET3",
+      "name": "SIGNAL1",
+      "connections": [
+        { "componentId": "IC1", "pinId": "3" },
+        { "componentId": "COMP1", "pinId": "1" }
+      ]
+    },
+    {
+      "id": "NET4",
+      "name": "SIGNAL2",
+      "connections": [
+        { "componentId": "COMP2", "pinId": "1" }
+      ]
+    }
+  ]
+}

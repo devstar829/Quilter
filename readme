@@ -1,0 +1,53 @@
+# PCB Netlist Visualizer and Validator
+
+PCB Netlist Visualizer and Validator is a web-based application designed to simplify the process of uploading, visualizing, and validating PCB netlists. The application provides an interactive interface for users to manage their netlists, view detailed visualizations, and validate connections.
+
+---
+
+## Features
+
+- **User Authentication**: Secure login and registration system.
+- **Netlist Management**: Upload, edit, and delete netlists.
+- **Interactive Visualization**: Force-directed graph visualization of netlists with zoom and pan functionality.
+- **Validation**: Validate netlists and highlight issues in the connections.
+- **Responsive Design**: Fully responsive UI for desktop and mobile devices.
+
+---
+
+## Tech Stack
+
+### Frontend
+- **React**: For building the user interface.
+- **React Router**: For client-side routing.
+- **D3.js**: For interactive data visualization.
+- **Axios**: For making HTTP requests to the backend.
+- **CSS**: For styling the application.
+
+### Backend
+- **Node.js**: For building the server-side application.
+- **Express.js**: For handling API routes.
+- **Mongoose**: For interacting with MongoDB.
+- **JWT**: For user authentication and authorization.
+
+### Database
+- **MongoDB**: NoSQL database for storing user and netlist data.
+
+### DevOps
+- **Docker**: For containerizing the application.
+- **Docker Compose**: For managing multi-container applications.
+
+---
+
+## Installation Guide
+
+### Prerequisites
+- **Node.js** (v18 or higher)
+- **Docker** and **Docker Compose**
+- **MongoDB** (if not using Docker)
+
+### Steps to Run the Application
+
+#### 1. Clone the Repository
+```bash
+git clone https://github.com/your-repo/pcb-netlist-visualizer.git
+cd pcb-netlist-visualizer

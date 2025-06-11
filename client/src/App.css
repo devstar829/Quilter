@@ -1,0 +1,36 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow: hidden; /* Removes the scroll bar */
+  font-family: 'Roboto', sans-serif;
+}
+
+#root {
+  height: 100%;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  height: 100vh; /* Full viewport height */
+}
+
+.container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding-top: 70px;
+  margin-bottom: 10px;
+  overflow: overlay; /* Prevents scrolling */
+}
+
+.landing-page .container {
+  padding-top: 0 !important; /* Remove padding for LandingPage */
+}
+
+main {
+  width: 100%;
+  max-width: 1200px; /* Optional: Limit the width for better readability */
+  box-sizing: border-box;
+}

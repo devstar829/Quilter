@@ -1,0 +1,68 @@
+.navbar {
+  width: 100%;
+  background: #1e3c72; /* Modern gradient background */
+  color: #fff;
+  padding: 1rem 2rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  position: fixed; /* Sticks the navbar to the top */
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between; /* Aligns logo to the left and links to the right */
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.navbar-logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #ff7f50; /* Highlighted logo color */
+  text-decoration: none;
+}
+
+.navbar-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem; /* Adds spacing between links */
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-link {
+  font-size: 1rem;
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.navbar-link:hover {
+  color: #ff7f50; /* Highlighted hover effect */
+}
+
+.navbar-btn {
+  padding: 0.5rem 1rem;
+  border: 2px solid #fff;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.navbar-btn:hover {
+  background: #fff;
+  color: #1e3c72;
+}
+
+.primary-btn {
+  background: #ff7f50;
+  color: #fff;
+  border: none;
+}
+
+.primary-btn:hover {
+  background: #ff5722;
+  transform: scale(1.05); /* Subtle hover effect */
+}
