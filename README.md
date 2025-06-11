@@ -62,8 +62,8 @@ PCB Netlist Visualizer and Validator is a web-based application designed to simp
 
 #### 1. Clone the Repository
 ```bash
-git clone https://github.com/your-repo/pcb-netlist-visualizer.git
-cd pcb-netlist-visualizer
+git clone https://github.com/devstar829/Quilter.git
+cd Quilter
 ```
 
 #### 2. Set Up Environment Variables
