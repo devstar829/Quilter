@@ -1,5 +1,18 @@
 # PCB Netlist Visualizer and Validator
 
+## Screenshots
+
+### Landing Page
+![Landing Page](./landingpage.png)
+
+### Dashboard
+![Dashboard](./dashboard.png)
+
+### Netlist Visualization
+![Netlist Visualization](./visualization.png)
+
+---
+
 PCB Netlist Visualizer and Validator is a web-based application designed to simplify the process of uploading, visualizing, and validating PCB netlists. The application provides an interactive interface for users to manage their netlists, view detailed visualizations, and validate connections. It is built with a modern tech stack and offers a responsive design for both desktop and mobile devices.
 
 ---
@@ -69,18 +82,6 @@ This will start the MongoDB database, backend server, and frontend client.
 
 ---
 
-## Screenshots
-
-### Landing Page
-![Landing Page](./landingpage.png)
-
-### Dashboard
-![Dashboard](./assets/dashboard.png)
-
-### Netlist Visualization
-![Netlist Visualization](./assets/visualization.png)
-
----
 
 ## License
 This project is licensed under the MIT License.
